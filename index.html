@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Bootstrap Library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+<!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery.js"></script>
+
+     <!-- Firebase References -->
+   <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
+
+
+    <title>Real Eastate App Project 1</title>
+</head>
+<body>
+
+<!-- Jumbotron slide in -->
+<div class="jumbotron jumbotron-fluid shadow p-3 mb-5 bg-seashell rounded" id="welcome-box">
+        <div class="container">
+        <h1 class="display-4 div1">New Job</h1>
+        <h1 class="div2">New Beginnings</h1>
+        </div>
+    </div>
+
+<br>
+<!-- nave bar -->
+<ul class="nav justify-content-end">
+        <li class="nav-item">
+        <a class="nav-link active">Sign In</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+    </ul>
+ 
+<br>
+<!-- search box -->
+<div class="card bg-dark text-white">
+    <img src="assets/css/images/1046x616_tablet_reading.jpg" class="card-img" alt="guy reading tablet">
+    <div class="card-img-overlay">
+        <div class="container test-1" id=location-search>   
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-7">
+                        <input type="text" class="form-control" id="input-job" placeholder="Job Title, Companies, Expertise" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="input-location" placeholder="City, State, Zip code or Country" required>
+                    </div>
+                </div>
+                
+                <button type="button" class="btn btn-primary submit-btn">Search</button>
+            </form>
+                                                    
+        </div><!-- search box close -->
+        <!-- optional title and text fields -->
+
+    </div> <!-- card-img-overlay closing div-->
+</div>               
+<hr>
+    <!-- <div container image-block -->
+<div class="row">
+
+    <div class="img-link" id="img1">
+        <a href="https://www.walmart.com/" target="_blank">
+        <img src="assets/css/images/blueground-apartment-2-2-2.jpg" class="img-fluid" title="Walmart" alt="Walmart link"></a>
+    </div>
+
+    <div class="img-link" id="img2">
+        <a href="https://www.uboxes.com/" target="_blank">
+        <img src="assets/css/images/canstockphoto25910830-300x250.jpg" class="img-fluid" title="UBoxes" alt="uboxes link"></a>
+    </div>
+
+    <div class="img-link" id="img3">
+        <a href="https://www.livecareer.com/resume-builder" target="_blank">
+        <img src="assets/css/images/getty_475352876_301971.jpg" class="img-fluid" title="Resume Builder" alt="Resume builder link"></a>
+    </div>
+
+    <div class="img-link" id="img4">
+        <a href="https://www.uhaul.com/" target="_blank">
+        <img src="assets/css/images/shutterstock_547827592.jpg" class="img-fluid" title="UHaul" alt="UHaul link"></a>
+    </div>
+
+    <div class="img-link" id="img5">
+            <a href="https://learn.forbes.com/" target="_blank">
+        <img src="assets/css/images/motivation.jpg_fit=scale" class="img-fluid" title="Forbes" alt="Learn at Forbes"></a>
+    </div>
+</div> <!-- row closing -->
+<hr>
+
+
+
+<!-- job results box -->
+<div class="job-results">
+ 
+</div>
+<!-- </div> -->
+
+
+<hr>
+
+<!-- home results box -->
+<div class="housing-listings" style="display:none;">
+    <div class="row housing-city">
+        
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Room Size</th>
+                <th scope="col">Median Rental Price($)</th>
+            </tr>
+        </thead>
+        <tbody class="housing-table"></tbody>
+    </table>
+    <div class="row">
+        Rental Price Data is from Quandl Zillow Real Estate Research API.
+    </div>
+</div>
+
+
+</div> <!-- Closing div-->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>

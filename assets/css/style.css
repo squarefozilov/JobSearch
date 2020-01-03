@@ -1,0 +1,66 @@
+.jumbotron-fluid {
+    padding: 0;
+    background: seashell;
+    background-size: cover;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#welcome-box {
+    text-align: left;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: navy;
+}
+
+h1 {
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+.div1 {animation-timing-function: ease;}
+.div2 {animation-timing-function: linear;}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#location-search{
+    position: relative;
+    top: 450px;
+}
+
+.test-1 {
+    z-index: 100;
+
+}
+
+.img-fluid{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+
+}
+
+.row {
+    justify-content: center;
+}
+
+.img-fluid:hover {
+    border: solid 2px #666;
+    box-shadow: 3px 4px 9px #787878;
+}
+
+.job-results .row {
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: left;
+    display: block;
+}
