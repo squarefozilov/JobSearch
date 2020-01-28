@@ -14,8 +14,6 @@ The application helps to find, explore and research both a new job and new locat
 * CSS
 * Bootstrap
 * AJAX
- DEMO [https://squarefozilov.github.io/JobSearch/]
-
 ## Installing
 
 To run the application locally, you will need to clone the repository to your local machine.
