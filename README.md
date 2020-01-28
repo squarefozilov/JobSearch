@@ -9,5 +9,5 @@ Based of the search result user can find housing price info.
 * API used : GitHub Jobs API, Zillow Real Estate Research API.
 * CSS
 * Bootstrap
-
+* AJAX
  DEMO [https://squarefozilov.github.io/JobSearch/]
